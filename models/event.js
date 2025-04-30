@@ -7,8 +7,8 @@ const eventSchema = new Schema({
     name: String,
    description: String,
     Date: {
-type: Date,
-default: Date.now()
+type: Date.toString,
+
     },
     user:String,
    email:String,
