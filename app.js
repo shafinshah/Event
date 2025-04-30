@@ -83,7 +83,7 @@ app.get("/About",(req,res)=>{
     res.render("About.ejs");
 })
 app.get("/Contect",(req,res)=>{
-    res.render("Contect.ejs");
+    res.render("contect.ejs");
 })
 app.get("/signup",(req,res) =>{
     res.render("signup.ejs");
