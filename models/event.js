@@ -6,10 +6,10 @@ const Schema = mongoose.Schema;
 const eventSchema = new Schema({
     name: String,
    description: String,
-    Date: {
-type: Date.toString(),
-
-    },
+  Date: {
+    type: Date,
+    default: Date.now()
+        },
     user:String,
    email:String,
    
