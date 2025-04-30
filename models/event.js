@@ -7,7 +7,7 @@ const eventSchema = new Schema({
     name: String,
    description: String,
     Date: {
-type: Date.toString,
+type: Date.toString(),
 
     },
     user:String,
