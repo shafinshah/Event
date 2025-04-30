@@ -1,0 +1,26 @@
+<% layout("layout/boilerplate") %>
+<body>
+    <h1>Top Events</h1>
+    <% for(let Event of allEvent){  %>
+        <div class="event">
+        <div class="card" >
+           
+            <ul class="list-group list-group-flush"  >
+                Event Name
+              <li class="list-group-item" style="background-color: black; color: blueviolet;"> <%= Event.name %></li>
+              Description:
+              <li class="list-group-item" style="background-color: black; color: blueviolet;"> <%= Event. description %></li>
+              Date:
+              <li class="list-group-item" style="background-color: black; color: blueviolet;"> <%= Event.Date %></li>
+              Owner:
+              <li class="list-group-item" style="background-color: black; color: blueviolet;"><%= Event.user %></li>
+              Email
+          <li class="list-group-item" style="background-color: black; color: blueviolet;"><%= Event.email %></li>
+            </ul>
+          </div>
+        </div>
+        
+        <br><br><br>
+
+        <% } %>
+</body>

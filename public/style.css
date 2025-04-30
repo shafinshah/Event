@@ -1,0 +1,253 @@
+body{
+    background-color: rgba(146, 213, 20, 0.586);
+    color: white;
+}
+.navbar{
+    height: 5rem;
+background-color:black;
+opacity: 0.85;
+color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+ color:white !important;
+}
+.info {
+    margin-bottom: 0rem !important;
+   text-align: center;
+    height: 9rem ;
+    background-color:#222222;
+   flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+  color: rgb(133, 133, 238);
+  bottom: 0;
+  }
+.f-info-links a{
+    text-decoration: none;
+}
+.f-info-links a:hover{
+  text-decoration: underline;
+}
+.f-info-links{
+    width: 100%;
+    margin-top: 1rem;
+}
+.f-info-socials{
+    width: 100%;
+
+
+}
+
+.f-info-links,
+.f-info-socials{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.nav-h{
+    margin-left: 5rem;
+    color: rgb(248, 42, 110);
+    font-weight: bolder;
+}
+.slide-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+  
+}
+
+@keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 1200px;}
+    30% {left: 1200px;}
+    40% {left: 2400px;}
+    50% {left: 2400px;}
+    60% {left: 1200px;}
+    70% {left: 1200px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+    }
+    .slide-image{
+        width: 3600px;
+        height: 800px;
+        margin: 0 0 0 -2400px;
+        position: relative;
+       animation-name: slide_animation;
+       animation-duration: 33s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       animation-play-state: running;
+
+    }
+    .img-container{
+      
+        margin-top: 2rem;
+        height: 600px;
+        width: 1200px;
+        position: relative;
+        float: left;
+    }
+    .imgd{
+        height: 600px !important;
+        width: 1200px !important;
+    }
+    .img{
+        margin-left: 3rem;
+    }
+    .text{
+        margin: 1rem 0rem 0rem 20rem;
+        color: white;
+    }
+    .text span{
+        font-size: 35px;
+        font-weight: bold;
+    }
+  
+    .event-box{
+        margin-top: 5rem;
+        margin-bottom: 8rem;
+        
+    }
+    .box1{
+        margin: 2rem 5rem 3rem 0rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .box2{
+        display: flex;
+        justify-content: space-around;
+    }
+   
+   
+   
+    .con-form input{
+        color:white;
+        background-color: #222222;
+        width: 100%;
+        border-radius: 20px;
+        height: 3rem;
+        margin-bottom: 1rem;
+     
+    }
+    .con-form textarea{
+        width:100%;  
+        color:white;
+        font-weight: bold;
+        background-color: #222222;
+        width: 100%;
+        border-radius: 20px;
+        height: 8rem;
+    }
+   
+   .thirdSection{
+    width: 50rem !important;
+    margin-bottom: 5rem;
+   }
+   .con-text{
+    margin: 2rem 3rem 4rem 5rem;
+   }
+   .About{
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+   }
+   .About hr{
+    color: #fe424d;
+   }
+   .gallery{
+    
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+   }
+  
+  
+
+   
+   .slider {
+    margin-top: 2rem;
+    margin-left: 14rem !important;
+     width: 800px;
+     height: 400px;
+     position: relative;
+     overflow: hidden;
+     border: 4px solid #fff;
+     border-radius: 10px;
+   }
+
+   .slides {
+     display: flex;
+     width: 400%;
+     height: 100%;
+     transition: all 0.5s ease;
+   }
+
+   .slide {
+     width: 100%;
+     height: 100%;
+     flex-shrink: 0;
+   }
+
+
+   /* Hide radio buttons */
+   input[type="radio"] {
+     display: none;
+   }
+
+   /* Navigation buttons (dots) */
+   .navigation-manual {
+     position: absolute;
+     width: 100%;
+     bottom: 10px;
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+   }
+
+   .manual-btn {
+     border: 2px solid #fff;
+     padding: 5px;
+     border-radius: 50%;
+     cursor: pointer;
+     transition: 0.3s;
+   }
+
+   .manual-btn:hover {
+     background: #fff;
+   }
+
+   #radio1:checked ~ .slides { transform: translateX(0%); }
+   #radio2:checked ~ .slides { transform: translateX(-100%); }
+   #radio3:checked ~ .slides { transform: translateX(-200%); }
+   #radio4:checked ~ .slides { transform: translateX(-300%); }
+
+   .slide img{
+    width: 800px !important;
+     height: 400px !important;
+}
+.profile{
+
+    height: 20px !important;
+    width: 20px;
+}
+.Event{
+    color: rgb(251, 5, 169) !important;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 2rem;
+
+}

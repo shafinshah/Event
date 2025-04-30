@@ -1,0 +1,56 @@
+<% layout("layout/boilerplate") %>
+<body>
+    <h1 style="margin-top: 2rem;    color: rgb(248, 42, 110);">REGISTER FOR EVENT</h1>
+    
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <h3>Creat New Event</h3>
+    
+    <form method="POST" action="/Event" novalidate class="needs-validation">
+        <div class="mb-3">
+            <label for="name" class="form-label">User Name</label>
+            <input name="Event[user]" placeholder="Enter user Name" type="text" class="form-control" required>
+            <div class="valid-feedback">name look good</div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input name="Event[email]" placeholder="Enter user Email" type="text" class="form-control" required>
+            <div class="valid-feedback"> look good</div>
+        </div>
+               
+<div class="mb-3">
+    <label for="Event" class="form-label">Event Name</label>
+    <input name="Event[name]" placeholder="Enter Event Name" type="text" class="form-control" required>
+    <div class="valid-feedback">name look good</div>
+</div>
+       
+
+<div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea name="Event[description]" placeholder="Enter description" class="form-control" required></textarea>
+    <div class="invalid-feedback">Please enter short description</div>
+</div>
+
+
+
+<div class="row">
+<diV class="mb-3 col-md-4" >
+    <label for="date" class="form-label">Date</label>
+    <input  type="date",name="Event[date]" placeholder="Enter date" class="form-control" required>
+    <div class="invalid-feedback">Please enter date</div>
+</diV>
+
+
+</diV>
+<br><br>
+
+<button class="btn btn-dark">Add</button>
+<br><br>
+    </form>
+</div>
+</div>
+
+</body>
+
+
